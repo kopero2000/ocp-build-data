@@ -49,6 +49,7 @@ konflux:
   # The number of times a build should be attempted before giving up.
   # Each failed attempt will result in a failed record in BigQuery
   build_attempts: 1
+  plr_template_commitish: kopero2000@konflux/references/main
 
 okd:
   konflux:
