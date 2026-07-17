@@ -8,8 +8,8 @@ arches:
 
 # These values are injected at runtime for the specific group that the builder is built for
 vars:
-  MAJOR: major
-  MINOR: minor
+  MAJOR: {MAJOR}
+  MINOR: {MINOR}
 
 konflux:
   network_mode: hermetic
