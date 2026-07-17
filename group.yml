@@ -20,7 +20,7 @@ konflux:
       backend: rpm-lockfile-prototype
 
 base_image_release:
-  enabled: true
+  enabled: false
 
 branch: rhaos-{MAJOR}.{MINOR}-rhel-9
 
