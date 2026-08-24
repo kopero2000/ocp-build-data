@@ -52,6 +52,7 @@ konflux:
       - binutils
       - binutils-gold
       - biosdevname
+      - cargo
       - chrony
       - cpp
       - cryptsetup-libs
