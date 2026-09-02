@@ -24,7 +24,7 @@ content:
       replacement: "ENV CI_RPM_SVC=base-{MAJOR}-{MINOR}-rhel9.ocp.svc"
 
 from:
-  stream: rhel-9-golang-1.25
+  stream: rhel-9-golang-{GO_LATEST}
 labels:
   io.k8s.description: golang {GO_LATEST} builder image for Red Hat CI
 distgit:
