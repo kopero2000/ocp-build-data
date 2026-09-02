@@ -1,5 +1,7 @@
 FROM replaced_by_doozer
 
+# TEST: dummy change to exercise the CI-image rebuild path on openshift-5.0-test
+
 # Used by builds scripts to detect whether they are running in the context
 # of OpenShift CI or elsewhere (e.g. brew).
 ENV OPENSHIFT_CI="true"
