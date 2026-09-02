@@ -41,6 +41,9 @@ enabled_repos:
 
 name: openshift/ci-openshift-build-root-extra-rhel8
 for_payload: false
+# Excluded from the general ocp4-scan/build pipeline; update-golang.py's CI
+# golang-builder/build-root reconciliation manages this image's lifecycle directly.
+mode: disabled
 for_release: false
 owners:
 - aos-team-art@redhat.com
