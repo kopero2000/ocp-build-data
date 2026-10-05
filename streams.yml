@@ -72,7 +72,7 @@ centos_stream8:
   # Mirror the centos images so that okd_alignment can reference them in app.ci
   image: quay.io/centos/centos:stream8
   # TODO: DELETE - testing only, exercises the transform/buildconfig path
-  upstream_image_base: registry.ci.openshift.org/ocp/builder:stream8-base
+  upstream_image_base: registry.ci.openshift.org/ocp/builder:stream8.art
   upstream_image: registry.ci.openshift.org/ocp/builder:stream8
   mirror: true
   mirror_manifest_list: true
