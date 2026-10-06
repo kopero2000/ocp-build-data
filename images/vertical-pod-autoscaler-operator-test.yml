@@ -1,6 +1,10 @@
 content:
   source:
-    dockerfile: Dockerfile.does-not-exist
+    dockerfile: Dockerfile.rhel7
+    modifications:
+    - action: replace
+      match: "RUN GOOS=${TARGETOS:-linux} GOARCH=${TARGETARCH} make container-binary-build"
+      replacement: "RUN GOOS=${TARGETOS:-linux} GOARCH=${TARGETARCH} make container-binary-build && exit 1"
     git:
       branch:
         target: release-{MAJOR}.{MINOR}
