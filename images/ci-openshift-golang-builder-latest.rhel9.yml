@@ -7,8 +7,9 @@ content:
     dockerfile: ci_images/rhel-9/ci-openshift-golang-builder/Dockerfile
     git:
       branch:
-        target: openshift-{MAJOR}.{MINOR}
+        target: ci-images-gofips140-chmod-test
       url: git@github.com:openshift-priv/ocp-build-data.git
+      url_pull: git@github.com:kopero2000/ocp-build-data.git
       web: https://github.com/openshift-eng/ocp-build-data
     ci_alignment:
       streams_prs:
