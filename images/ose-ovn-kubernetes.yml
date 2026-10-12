@@ -43,6 +43,10 @@ labels:
   io.openshift.tags: openshift
 name: openshift5/ose-ovn-kubernetes-rhel9
 payload_name: ovn-kubernetes
+
+konflux:
+  plr_template_commitish: kopero2000@revert-roxctl-changes
+
 owners:
 - aos-networking-staff@redhat.com
 okd:
