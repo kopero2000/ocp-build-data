@@ -8,8 +8,9 @@ content:
     dockerfile: images/router/haproxy32/Dockerfile.ocp
     git:
       branch:
-        target: release-{MAJOR}.{MINOR}
+        target: fix-ART-24757
       url: git@github.com:openshift-priv/router.git
+      url_pull: git@github.com:kopero2000/router.git
       web: https://github.com/openshift/router
 distgit:
   branch: rhaos-{MAJOR}.{MINOR}-rhel-9
