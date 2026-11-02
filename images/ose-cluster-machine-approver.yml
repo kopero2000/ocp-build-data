@@ -1,10 +1,16 @@
+cachito:
+  packages:
+    gomod:
+    - path: .
+    - path: openshift-tests-extension
 content:
   source:
     dockerfile: Dockerfile.rhel
     git:
       branch:
-        target: release-{MAJOR}.{MINOR}
+        target: OCPBUGS-136132
       url: git@github.com:openshift-priv/cluster-machine-approver.git
+      url_pull: git@github.com:kopero2000/cluster-machine-approver.git
       web: https://github.com/openshift/cluster-machine-approver
     ci_alignment:
       streams_prs:
